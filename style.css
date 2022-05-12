@@ -45,6 +45,8 @@ a {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 18px;
     background-color: #F6EEC4;
     
 }
@@ -87,6 +89,8 @@ a {
     flex: 1 1 auto;
     min-height: 100vh;
     width: 100vw;
+    margin: 0px;
+    padding: 18px;
     background-color: #4a4a4a;
     justify-content: center;
 }
@@ -96,3 +100,69 @@ a {
     color: #e5e5e5;
     text-align: center;
 }
+
+/* my work page stuff*/
+
+#myworkpage {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 18px;
+    background-color:#e5e5e5;
+    align-items: center;
+}
+
+#myworkhead {
+    font-size: 64px;
+    font-weight: bold;
+    color: #4a4a4a; 
+    margin: 20px;
+}
+
+/* who page stuff */
+
+#whopage {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 18px;
+    background-color: #4a4a4a;
+    justify-content: center;
+    align-items: center;
+}
+
+.whotext {
+    width: 120ch;
+    height: auto;
+}
+
+.whoparaone {
+    font-size: 48px;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+.doforyouhead {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e5e5e5;
+    text-decoration: underline;
+}
+
+.doforyoutext {
+    font-size: 40px;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+
+
+
+/* contact page stuff */
+
