@@ -221,6 +221,8 @@ a {
     justify-content: center;
     max-width: 100%;
     border-top: 2px #1E5451 solid;
+    margin: auto 12px auto 12px;
+    padding: 24px;
 }
 
 .socialslistone {
