@@ -8,6 +8,9 @@ cream text: #1E5451
 dark gray bg text & light gray bg: #e5e5e5
 */
 
+html {
+    font-size: 40px;
+}
 
 body {
     font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
@@ -18,7 +21,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-size: 40px;
 
 }
 
@@ -51,12 +53,12 @@ a {
     margin: 0;
     padding: 18px;
     background-color: #F6EEC4;
-    
 }
 
 #headerwrapper {
     display: flex;
     flex-flow: row nowrap;
+    margin-top: 0;
     margin: 0;
     padding: 12px;
     justify-content: space-between;
@@ -99,14 +101,12 @@ a {
 }
 
 .hookpara {
-    font-size: 2.5em;
+    font-size: 2.4em;
     color: #1E5451;
     text-align: center;
     padding: 0;
-    margin: 16px 0 0 0;
-    padding: 0 8px 0 8px;
+    margin: .5em 0 .5em 0;
 }
-
 /*why page stuff*/
 
 #whypage {
@@ -202,11 +202,9 @@ a {
     flex: 0 1 auto;
     min-height: 100vh;
     max-width: 100%;
-    margin: 0;
     padding: 26px;
     background-color: #F6EEC4;
     justify-content: center;
-    align-items: space-between;
 }
 
 .contactpara {
@@ -220,25 +218,27 @@ a {
 .socialscontainer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    max-width: 100%;
     border-top: 2px #1E5451 solid;
 }
 
 .socialslistone {
     color:#1E5451;
-    font-size: 1.25em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
-    margin: 26px auto 18px auto;
+    margin: 26px auto auto 18px;
+    text-align: center;
 }
 
 .socialslisttwo {
     color:#1E5451;
-    font-size: 1.25em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     margin: 26px 18px auto auto;
+    text-align: center;
 }
 
 .sociallink {
@@ -269,6 +269,7 @@ a {
 footer {
     display: flex;
     margin-bottom: 0;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #4a4a4a;
@@ -280,7 +281,306 @@ footer {
 
 /*responsiveness stuff*/
 
-/* mobile phone screens */
-@media (max-width: 390px) {
+/* xs phone screen */
 
+@media (min-width: 280px) {
+
+    li {
+        margin: 6px;
+    }
+
+
+    #headerwrapper {
+        flex-flow: column nowrap;
+    }
+
+   
+    #pagetitle {
+        font-size: 14px;
+    }
+
+    #pagenav {
+        font-size: 12px;
+    }
+
+    .hookpara {
+        font-size: 26px;
+        margin-top: 4em;
+    }
+
+    .whypagetext {
+        font-size: 12px;
+    }
+
+    .myworkhead {
+        font-size: 18px;
+    }
+
+    .whoparaone {
+        font-size: 14px;
+    }
+
+    .doforyouhead {
+        font-size: 18px;
+    }
+
+    .doforyoutext {
+        font-size: 14px;
+    }
+
+    .contactpara {
+        font-size: 16px;
+    }
+
+    .socialscontainer {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+    }   
+}
+
+/* small-medium phone screens */
+@media (min-width: 360px) {
+
+    li {
+        margin: 6px;
+    }
+
+
+    #headerwrapper {
+        flex-flow: column nowrap;
+    }
+
+   
+    #pagetitle {
+        font-size: 20px;
+    }
+
+    #pagenav {
+        font-size: 20px;
+
+    }
+
+    .hookpara {
+        font-size: 36px;
+        margin-top: 2em;
+    }
+
+    .whypagetext {
+        font-size: 20px;
+    }
+
+    .myworkhead {
+        font-size: 24px;
+    }
+
+    .whoparaone {
+        font-size: 20px;
+    }
+
+    .doforyouhead {
+        font-size: 24px;
+    }
+
+    .doforyoutext {
+        font-size: 20px;
+    }
+
+    .contactpara {
+        font-size: 24px;
+    }
+
+    .socialscontainer {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 16px;
+    }   
+}
+
+/* medium-large phone screens, small tablets */
+@media (min-width: 540px) {
+
+    li {
+        margin: 12px;
+    }
+
+
+    #headerwrapper {
+        flex-flow: column nowrap;
+    }
+
+   
+    #pagetitle {
+        font-size: 22px;
+    }
+
+    #pagenav {
+        font-size: 22px;
+    }
+
+    .hookpara {
+        font-size: 48px;
+        margin-top: 2.5em;
+    }
+
+    .whypagetext {
+        font-size: 22px;
+    }
+
+    .myworkhead {
+        font-size: 26px;
+    }
+
+    .whoparaone {
+        font-size: 26px;
+    }
+
+    .doforyouhead {
+        font-size: 26px;
+    }
+
+    .doforyoutext {
+        font-size: 24px;
+    }
+
+    .contactpara {
+        font-size: 30px;
+    }
+
+    .socialscontainer {
+        font-size: 26px;
+    }
+
+    footer {
+        font-size: 18px;
+    }   
+}
+
+/* tablets */
+
+@media (min-width: 820px) {
+    #headerwrapper {
+        flex-flow: column nowrap;
+    }
+}
+
+/* small laptops */
+
+@media (min-width: 1024px) {
+
+    li {
+        margin: 8px;
+    }
+
+    #headerwrapper {
+        flex-flow: row nowrap;
+    }
+    
+    #pagetitle {
+        font-size: 32px;
+    }
+
+    #pagenav {
+        font-size: 32px;
+    }
+
+    .hookpara {
+        font-size: 58px;
+        margin-top: 2em;
+    }
+
+    .whypagetext {
+        font-size: 36px;
+    }
+
+    .myworkhead {
+        font-size: 32px;
+    }
+
+    .whoparaone {
+        font-size: 36px;
+    }
+
+    .doforyouhead {
+        font-size: 46px;
+    }
+
+    .doforyoutext {
+        font-size: 32px;
+    }
+
+    .contactpara {
+        font-size: 56px;
+    }
+
+    .socialscontainer {
+        font-size: 42px;
+    }
+
+    footer {
+        font-size: 16px;
+    }   
+
+}
+
+/* everything else */
+
+@media (min-width: 1250px) {
+    
+    li {
+        margin: 12px;
+    }
+
+    #headerwrapper {
+        flex-flow: row nowrap;
+    }
+    
+    #pagetitle {
+        font-size: 40px;
+    }
+
+    #pagenav {
+        font-size: 40px;
+    }
+
+    .hookpara {
+        font-size: 96px;
+        margin-top: .5em;
+    }
+
+    .whypagetext {
+        font-size: 40px;
+    }
+
+    .myworkhead {
+        font-size: 48px;
+    }
+
+    .whoparaone {
+        font-size: 44px;
+    }
+
+    .doforyouhead {
+        font-size: 48px;
+    }
+
+    .doforyoutext {
+        font-size: 36px;
+    }
+
+    .contactpara {
+        font-size: 60px;
+    }
+
+    .socialscontainer {
+        font-size: 46px;
+    }
+
+    footer {
+        font-size: 18px;
+    }   
 }
